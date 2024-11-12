@@ -1,0 +1,27 @@
+# region               = "ap-south-1"
+# vpc_tag              = "var-VPC"
+# vpc-cidr_block       = "10.0.0.0/16"
+# subnet1-cidr_block    = "10.0.1.0/24"
+# subnet2-cidr_block    = "10.0.2.0/24"
+# subnet3-cidr_block    = "10.0.3.0/24"
+# subnet-az1            = "ap-south-1a"
+# subnet-az2            = "ap-south-1b"
+# subnet-az3            = "ap-south-1c"
+# subnet_tag           = "Var-Public-Subnet-1"
+# igw_tag              = "Var-IGW"
+# public-rt-cidr_block = "10.0.0.0/16"
+# public-rt_tag        = "Var-Public-RT"
+# instance_type        = "t2.small"
+# ami                  = "ami-0cc9838aa7ab1dce7"
+
+region             = "ap-south-1"
+vpc-cidr_block     = "10.0.0.0/16"
+vpc_tag            = "Terraform_Function"
+public_subnet_tag  = "fun_Public_Subnet"
+private_subnet_tag = "fun_Private_Subnet"
+public-cidr_block  = ["10.0.10.0/24", "10.0.20.0/24", "10.0.30.0/24"]
+private-cidr_block = ["10.0.40.0/24", "10.0.50.0/24", "10.0.60.0/24"]
+instance_type      = "t2.micro"
+ami                = "ami-0cc9838aa7ab1dce7"
+az                 = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
+environment        = "Dev"
